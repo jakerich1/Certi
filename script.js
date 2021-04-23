@@ -6,9 +6,12 @@ $(function () {
 });
 
 const control = document.querySelector(".control")
-const audioElement = document.querySelector("audio")
+const audioElement = new Audio('Music/9oclock.mp3');
 const playbtn = document.querySelector("#play")
 const pausebtn = document.querySelector("#pause")
+
+
+
 let playing = false;
 
 const playMusic = () => {
