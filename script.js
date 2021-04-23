@@ -7,6 +7,7 @@ $(function () {
 
 const control = document.querySelector(".control")
 const audioElement = new Audio('Music/9oclock.mp3')
+audioElement.play()
 audioElement.pause()
 const playbtn = document.querySelector("#play")
 const pausebtn = document.querySelector("#pause")
@@ -28,8 +29,6 @@ function playMusic() {
         playbtn.style.display = "block"
         pausebtn.style.display = "none"
     }
-
-    playing = !playing
     
 }
 
