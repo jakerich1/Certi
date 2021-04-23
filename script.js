@@ -24,7 +24,6 @@ function playMusic() {
         pausebtn.style.display = "block"
     }else{
         audioElement.pause();
-        audioElement.currentTime = 0
         playbtn.style.display = "block"
         pausebtn.style.display = "none"
     }
