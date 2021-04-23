@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="touchpunch.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -44,6 +45,19 @@
         <div id="draggable" class="action">
             <img src="images/cover.jpg" alt="cover image">
             <div class="details">
+                <div class="control">
+                    <svg id="play" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 4v16l13 -8z"></path>
+                    </svg>
+                    <svg id="pause" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-pause" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <rect x="6" y="5" width="4" height="14" rx="1"></rect>
+                        <rect x="14" y="5" width="4" height="14" rx="1"></rect>
+                     </svg>
+                </div>
                 <div class="track">9 O'Clock</div>
                 <div class="artist">Ayshani</div>
                 <div class="share">
@@ -116,6 +130,9 @@
             </div>
         </div>
 
+        <audio>
+            <source src="Music/9oclock.mp3"/>
+       </audio>
 
     </section>
 

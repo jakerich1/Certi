@@ -1,7 +1,8 @@
 section{
     position: relative;
-    height: calc(100% - 0px);
-    padding: 3px 8px;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
     background-color: rgb(24, 24, 24);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -25,7 +26,6 @@ section{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 5px;
         cursor: pointer;
 
         .navBtn{
@@ -53,7 +53,7 @@ section{
 
     .action{
         position: relative;
-        margin-top: 15px;
+        margin-top: 10px;
 
         img{
             display: block;
@@ -74,12 +74,29 @@ section{
 
             div{
                 padding: 2px 20px;
-                margin-bottom: 10px;
                 border-radius: 4px;
+                margin-bottom: 5px;
                 background-color: rgba(0, 0, 0, 0.411);
             }
             div:last-child{
                 margin-bottom: 20px;
+            }
+
+            .control{
+                margin-bottom: 30px;
+                cursor: pointer;
+
+                svg{
+                    height: 60px;
+                }
+
+                #play{
+                    display: block;
+                }
+
+                #pause{
+                    display: none;
+                }
             }
 
             .track{
