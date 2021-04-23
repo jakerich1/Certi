@@ -7,11 +7,11 @@ $(function () {
 
 const control = document.querySelector(".control")
 const audioElement = new Audio('Music/9oclock.mp3')
-audioElement.play()
-audioElement.pause()
 const playbtn = document.querySelector("#play")
 const pausebtn = document.querySelector("#pause")
-control.addEventListener("touchstart", function() {
+
+
+control.addEventListener("click", function() {
     playMusic()
 })
 
