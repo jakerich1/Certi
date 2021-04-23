@@ -11,7 +11,7 @@ const playbtn = document.querySelector("#play")
 const pausebtn = document.querySelector("#pause")
 
 
-control.addEventListener("click", function() {
+control.addEventListener("touchstart", function() {
     playMusic()
 })
 
