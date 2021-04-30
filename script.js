@@ -5,31 +5,60 @@ $(function () {
     });
 });
 
+const actionElement = document.querySelector(".action")
+
+actionElement.addEventListener("touchmove", function (event) {
+    moveCard(event)
+})
+
 const control = document.querySelector(".control")
 const audioElement = new Audio('Music/9oclock.mp3')
 const playbtn = document.querySelector("#play")
 const pausebtn = document.querySelector("#pause")
+let playing = false;
 
-
-control.addEventListener("touchstart", function() {
+control.addEventListener("touchstart", function () {
     playMusic()
 })
 
-
-let playing = false;
-
 function playMusic() {
 
-    if (audioElement.paused) {
-        audioElement.play()
-        playbtn.style.display = "none"
-        pausebtn.style.display = "block"
-    }else{
-        audioElement.pause()
+    if (playing) {
+
+        playing = false;
+        pauseAudio();
         playbtn.style.display = "block"
         pausebtn.style.display = "none"
+
+    } else {
+
+        playing = true;
+        playAudio();
+        playbtn.style.display = "none"
+        pausebtn.style.display = "block"
+
     }
-    
+
+}
+
+function playAudio() {
+    audioElement.play();
+}
+
+function pauseAudio() {
+    audioElement.pause();
 }
 
 
+function moveCard(e) {
+
+    console.log(getOffset(actionElement))
+
+}
+
+function getOffset(el) {
+    const rect = el.getBoundingClientRect();
+    return {
+      rect
+    };
+  }
